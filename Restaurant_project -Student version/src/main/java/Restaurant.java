@@ -71,6 +71,13 @@ public class Restaurant {
         return name;
     }
 
-
+    //The following method is to calculate the total cost for the selected items.
+    public int getOrderValue(List<String> itemsToOrder){
+        int total = 0;
+        for(String item:itemsToOrder){
+            total += findItemByName(item).getPrice();
+        }
+        return total;
+    }
 
 }

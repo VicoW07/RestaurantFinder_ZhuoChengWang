@@ -17,7 +17,7 @@ class RestaurantTest {
     //REFACTOR ALL THE REPEATED LINES OF CODE
 
     @BeforeEach
-    public void refactoring_common_coding_for_the_instantiation_of_the_test_object() {
+    public void refactoring_repeated_lines_for_the_test_objects() {
         LocalTime openingTime = LocalTime.parse("10:30:00");
         LocalTime closingTime = LocalTime.parse("22:00:00");
         restaurant = new Restaurant("Amelie's cafe", "Chennai", openingTime, closingTime);
